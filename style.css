@@ -1,0 +1,32 @@
+body {
+  /* background: radial-gradient(circle to bottom, #9fb 0%, #0c1753 100%); */
+  background: radial-gradient(circle at bottom, #d1d0df 0%, #1f2026 100%);
+  /* Aza adino ilay height io fa lasa mi-se repeter be le sary */
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  /* Axe x */
+  justify-content: center;
+  /* Axe y */
+  align-items: center;
+}
+
+circle {
+  fill: none;
+  stroke: antiquewhite;
+  stroke-width: 10px;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 70;
+  animation: rotate 2s ease-in-out infinite alternate;
+}
+
+svg {
+  transform: translateX(-50px);
+  filter: drop-shadow(100px 0 5px rgb(17, 17, 44));
+}
+
+@keyframes rotate {
+  to {
+    stroke-dashoffset: -600;
+  }
+}
